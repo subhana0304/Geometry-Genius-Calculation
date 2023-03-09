@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius Assignment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        
+</head>
+
+<body>
+    <header>
+        <nav class="navbar bg-body-tertiary container px-3 py-2 mt-3">
+            <div class="container-fluid">
+                <a class="navbar-brand"><span class="fw-bolder fs-3">Interactive</span><br><span class="fs-6">Geometry
+                        Genius</span></a>
+                <a class="btn btn-primary d-flex px-4" href="blog.html">Blog</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="container my-5">
+            <div class="row">
+                <div class="col-12 col-md-8 col-lg-8">
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
+
+                        <div class="col">
+                            <div class="card text-center p-3 h-100">
+                                <img class="img-fluid" src="images/triangle.png" alt="">
+                                <div class="card-text mt-3">
+                                    <h4>Triangle</h4>
+                                    <p>Area (A) = <span>0.5 * <span id="vumi">b</span> * <span id="height">h</span></span></p>
+                                    <div class="inputField">
+                                        <input id="triangle-b" class="w-25 border-0 bg-success-subtle rounded mx-2"
+                                            type="number"><span>cm</span>
+                                        <input id="triangle-h" class="w-25 border-0 bg-success-subtle rounded mx-2"
+                                            type="number"><span>cm</span>
+                                    </div>
+                                    <button id="triangle-btn" class="btn btn-primary px-5 mt-3 fw-bolder">Calculate</button>
+                                </div>
+                            </div>
+                          </div>
+
+                          <div class="col">
+                            <div class="card text-center p-3 h-100">
+                                <img class="img-fluid" src="images/rectangle.png" alt="">
+                                <div class="card-text mt-3">
+                                    <h4>Rectangler</h4>
+                                    <p>Area (A) = <span id="r-width">w</span> * <span id="r-i">I</span></p>
+                                    <div class="inputField">
+                                        <input id="rectangler-w" class="w-25 border-0 bg-success-subtle rounded mx-2"
+                                            type="number"><span>cm</span>
+                                        <input id="rectangler-i" class="w-25 border-0 bg-success-subtle rounded mx-2"
+                                            type="number"><span>cm</span>
+                                    </div>
+                                    <button id="rectanguler-btn" class="btn btn-primary px-5 mt-3 fw-bolder">Calculate</button>
+                                </div>
+                            </div>
+                          </div>
+
+                          <div class="col">
+                            <div class="card text-center p-3 h-100">
+                                <img class="img-fluid" src="images/parallelogram.png" alt="">
+                                <div class="card-text mt-3">
+                                    <h4>Parallelogram</h4>
+                                    <p>Area (A) = <span id="p-b">b</span> * <span id="p-h">h</span></p>
+                                    <div class="inputField">
+                                        <input id="parallelogram-b" class="w-25 border-0 bg-success-subtle rounded mx-2"
+                                            type="number"><span>cm</span>
+                                        <input id="parallelogram-h" class="w-25 border-0 bg-success-subtle rounded mx-2"
+                                            type="number"><span>cm</span>
+                                    </div>
+                                    <button id="parallelogram-btn" class="btn btn-primary px-5 mt-3 fw-bolder">Calculate</button>
+                                </div>
+                            </div>
+                          </div>
+
+
+                          <div class="col">
+                            <div class="card text-center p-3 h-100">
+                                <img class="img-fluid" src="images/rhombus.png" alt="">
+                                <div class="card-text mt-3">
+                                    <h4>Rhombus</h4>
+                                    <p>Area (A) = <span>0.5 * <span id="rh-d1">d<sub>1</sub></span> * <span id="rh-d2">d<sub>2</sub></span></span></p>
+                                    <div class="inputField">
+                                        <input id="rhombus-d1" class="w-25 border-0 bg-success-subtle rounded mx-2"
+                                            type="number"><span>cm</span>
+                                        <input id="rhombus-d2" class="w-25 border-0 bg-success-subtle rounded mx-2"
+                                            type="number"><span>cm</span>
+                                    </div>
+                                    <button id="rhombus-btn" class="btn btn-primary px-5 mt-3 fw-bolder">Calculate</button>
+                                </div>
+                            </div>
+                          </div>
+
+                          <div class="col">
+                            <div class="card text-center p-3 h-100">
+                                <img class="img-fluid" src="images/pentagon.png" alt="">
+                                <div class="card-text mt-3">
+                                    <h4>Pentagon</h4>
+                                    <p>Area (A) = <span>0.5 * <span id="pn-p"> p </span> * <span id="pn-b"> b </span></span></p>
+                                    <div class="inputField">
+                                        <input id="pentagonP" class="w-25 border-0 bg-success-subtle rounded mx-2"
+                                            type="number"><span>cm</span>
+                                        <input id="pentagonB" class="w-25 border-0 bg-success-subtle rounded mx-2"
+                                            type="number"><span>cm</span>
+                                    </div>
+                                    <button id="pentagon-btn" class="btn btn-primary px-5 mt-3 fw-bolder">Calculate</button>
+                                </div>
+                            </div>
+                          </div>
+
+                          <div class="col">
+                            <div class="card text-center p-3 h-100 ">
+                                <img class="img-fluid" src="images/ellipse.png" alt="">
+                                <div class="card-text mt-3">
+                                    <h4>Ellipse</h4>
+                                    <p>Area (A) = <span> 3.1416 * <span id="e-a"> a </span> * <span id="e-b"> b </span></span></p>
+                                    <div class="inputField">
+                                        <input id="ellipseA" class="w-25 border-0 bg-success-subtle rounded mx-2"
+                                            type="number"><span>cm</span>
+                                        <input id="ellipseB" class="w-25 border-0 bg-success-subtle rounded mx-2"
+                                            type="number"><span>cm</span>
+                                    </div>
+                                    <button id="ellipse-btn" class="btn btn-primary px-5 mt-3 fw-bolder">Calculate</button>
+                                </div>
+                            </div>
+                          </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4 g-3">
+                    <div class="right border text-center rounded p-3 py-5">
+                        <h3>Area Calculation</h3>
+                        <div id="right-text" class="mt-5 right-text">
+                            <ol id="orderlist">
+                                
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
